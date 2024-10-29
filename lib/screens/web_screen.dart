@@ -14,7 +14,7 @@ class WebScreen extends StatefulWidget {
 class _WebScreenState extends State<WebScreen> {
   InAppWebViewController? inAppWebViewController;
   PullToRefreshController? pullToRefreshController;
-  String _selectedEngine = "Google"; // Default search engine
+  String _selectedEngine = "Google"; 
 
   @override
   void initState() {
