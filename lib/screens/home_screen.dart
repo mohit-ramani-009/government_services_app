@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    _filteredList = list; // Initialize filtered list with all items
+    _filteredList = list; 
     _searchController.addListener(_filterServices);
 
     Connectivity().onConnectivityChanged.listen((res) {
@@ -156,7 +156,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       subtitle: const Text("Tap to access service"),
                       onTap: () {
                         String url = _filteredList[index]["url"];
-                        // Directly navigate to the WebScreen with the URL
                         Navigator.pushNamed(context, "WebScreen", arguments: url);
                       },
                       trailing: const Icon(Icons.arrow_forward_ios),
